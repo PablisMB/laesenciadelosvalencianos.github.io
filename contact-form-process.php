@@ -55,7 +55,6 @@ if (isset($_POST['Email'])) {
     // Headers
     $headers = 'De: ' . $email . "\r\n" .
         'Responde a: ' . $email . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
