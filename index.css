@@ -1,0 +1,574 @@
+/* Completado:
+    - Header
+    - Footer
+*/
+
+/* Pendiente:
+    - Menu
+    - Contacto
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+h4{ font-size: 1em; }
+p{ font-size: 1.25em; }
+ul{ list-style: none; }
+li{ font-size: 1.25em; }
+
+
+button{
+    border: 2x solid rgba(0,0,0,0,5);
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #356045; 
+    border-radius: 50%;
+}
+
+#justeat{
+    background-image: url("./fotos/justeat.jpg");
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+#glovo{
+    background-image: url("./fotos/glovo.png");
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+.container{ 
+    margin: auto;
+}
+
+.color-acc{
+    color: #356045;
+}
+
+.color-ac{
+    color: #356045;
+}
+
+.color-ac:hover{
+    color: #356045;
+}
+
+header{
+    background-color: rgb(238, 231, 168);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #356045;
+    font-size: 1.80em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(66, 64, 64);
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+header a:hover{
+    color: #327c4d;
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("fotos/cafeteria.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+
+#inicio h1{
+    color: white;
+    padding-top: 30px;
+}
+
+#inicio h4{
+    color: rgba(255, 255, 255, 0.671);
+    padding-top: 30px;
+}
+
+#inicio button{
+    font-size: 1.75em;
+    margin: 0px 30px;
+}
+
+#inicio .container{
+    flex-direction: row;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#menu {
+    background: linear-gradient(to bottom, #356045, rgba(153, 133, 133, 0.295));
+    color: rgba(153, 133, 133, 0.295);
+    border-radius: 0 0 0 40%;
+    display: scroll;
+}
+
+#menu .container{
+    text-align: center;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu h2{
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menu p{
+    display: show;
+}
+
+#menu .carta{
+    background-position: center center;
+    background-size: cover; 
+    padding: 50px 0px;
+    margin: 50px;
+    border-radius: 15px;
+    color: rgba(255, 250, 250, 0.479);
+    background-color: transparent;
+}
+
+#menu .carta:hover{
+    color: rgb(255, 250, 250);
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("fotos/calvorco.PNG");
+     
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("fotos/taibombs.PNG");
+ 
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("fotos/osu.PNG");
+}
+
+#logros .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#logros li{
+    margin: 16px 0px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#contacta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgba(30,30,30);
+    color: white;
+    height: 100%;
+}
+
+#contacto button{
+    font-size: 1.75em;
+}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+    display: inline-block;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* Logo */
+
+.footer-distributed h3{
+	color:#ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color: #4d9c6a;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+    margin-right: 10px;
+	cursor: pointer;
+	background-color:   #33383b;
+	border-radius: 50%;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-distributed p{
+    font-size: 25px;
+}
+
+.footer-distributed .footer-icons #fb{
+    background-image: url("./fotos/facebuk.png");
+    background-size: 50px 50px;
+}
+
+.footer-distributed .footer-icons #ig{
+    background-image: url("./fotos/instagram3.png");
+    background-size: 50px 50px;
+}
+
+.footer-distributed .footer-icons #maps{
+    background-image: url("./fotos/periscope.png");
+    background-size: 50px 50px;
+}
+
+
+/* Footer right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* Contacto */
+
+.footer-distributed form{
+	display: inline-block;
+    clear: right;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    color:rgb(201, 201, 201);
+}
+
+.footer-distributed form button:hover{
+    color: rgb(235, 230, 230);
+}
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+        clear: right;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+
+@media (min-width: 727px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+    
+    #hero h1{
+        font-size: 4em;
+    }
+
+    #menu .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #menu .texto{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #menu h2{
+        margin: 0;
+    }
+
+    #menu .img-container{
+        background-image: url("fotos/palo.png");
+         background-size: cover;
+         background-position: center center;
+         height: 500px;
+         width: 400px;
+    }
+    
+    #inicio .proyectos{
+        justify-content: center;
+    }
+ 
+
+    #inicio p{
+        display: block;
+        margin-bottom: 30px;
+    }
+ 
+    #inicio h3{
+        margin-top: 0px;
+    }
+
+    #inicio .carta{
+        padding: 15px;
+    }
+
+    #contacto{
+        background-image: url("fotos/soyyo.PNG");
+        background-repeat: no-repeat;
+        background-size: 300px 150px;
+        background-position: 650px 175px;
+    }
+
+    #contacto .container{
+        text-align: left;
+    }
+
+    #contacto h2{
+        margin-left: 50px;
+    }
+
+    #contacto ul{
+        margin-left: 10px;
+        font-size: 0.85em;
+    }
+
+    #contacto button{
+        font-size: 1.75em;
+    }
+
+}

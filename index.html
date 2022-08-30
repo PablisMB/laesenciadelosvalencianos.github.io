@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>La Esencia de Los Valencianos</title>
+    <link rel="icon" href="./fotos/logo.jpg">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <p class="logo">La Esencia de Los Valencianos</p>
+        <nav>
+          <a href="#inicio">Inicio</a>
+          <a href="#menu">Menú</a>
+          <a href="#contacto">Contáctanos</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="inicio">
+      <h1>Pedir ya!</h1>
+        <div class="container">
+          <form action="https://www.just-eat.es/restaurants-la-esencia-de-los-valencianos-badajoz/menu" target="_blank">
+            <button id="justeat"></button>
+          </form>
+          <form action="https://glovoapp.com/es/es/merida/la-esencia-de-los-valencianos-merida/?utm_campaign=maplinks&utm_medium=organic&utm_source=googlemaps" target="_blank">
+            <button id="glovo"></button>
+          </form>
+        </div> 
+      <h4>*El horario de entregas puede variar según la empresa</h4>
+    </section>
+
+    <section id="menu">
+      <div class="container">
+        <h2>Nuestro menú</h2> 
+          <div class="menu">
+              <div class="carta" id="carta">
+                  <h3></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus, voluptatibus ipsa commodi inventore dolorum aliquid amet ipsum ullam quod dolorem dignissimos doloribus praesentium a porro cum facilis? Quas, temporibus!</p>
+              </div>
+              <div class="carta" id="carta">
+                  <h3></h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus sequi, soluta nemo id quo, laborum voluptatum, excepturi ullam deleniti ea nulla quia! Quae ducimus accusamus itaque eos distinctio repudiandae ullam.</p>
+              </div>
+              <div class="carta" id="carta">
+                  <h3></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, labore fuga, consectetur ea soluta veritatis quod numquam eos culpa maiores, repellendus mollitia architecto dolor aspernatur voluptate voluptas dolores in praesentium.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <footer class="footer-distributed" id="contacto">
+			<div class="footer-left">
+				<h3>La Esencia de <span>Los Valencianos</span></h3>
+				<p class="footer-links">
+					<a href="#inicio">Inicio</a>
+					·
+					<a href="#menu">Menú</a>
+					·
+					<a href="#contacto">Contáctanos</a>
+				</p> 
+				<p class="footer-company-name">La Esencia de los Valencianos © 2022</p>
+				<div class="footer-icons">
+					<a id="fb" href="https://es-es.facebook.com/LaEsenciaDeLosValencianos"><i class="fa-facebook"></i></a> <!--cuando lo ves-->
+					<a id="ig" href="url"><i class="fa-instagram"></i></a>
+					<a id="maps" href="https://www.google.com/maps/place/La+Esencia+de+los+Valencianos/@38.9181301,-6.3438216,20.08z/data=!4m5!3m4!1s0xd1427b01bb3d7a5:0x894229faa19dfdd9!8m2!3d38.9181438!4d-6.3435196"><i class="fa-maps"></i></a>
+				</div>
+			</div>
+<!--amogus-->
+			<div class="footer-right">
+				<p>Contáctanos</p>
+				<form id="fcf-form-id" class="fcf-form-class" action="contact-form-process.php" method="POST">
+        <div class="fcf-form-group">
+          <label for="Email" class="fcf-label">Email</label>
+          <div class="fcf-input-group">
+              <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+          </div>
+        <div class="fcf-form-group">
+          <label for="Message" class="fcf-label">Su mensaje</label>
+          <div class="fcf-input-group">
+              <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+          </div>
+        </div>
+        <div class="fcf-form-group">
+          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar</button>
+        </div>
+			</div>
+      </form>
+		</footer>
+  </body>
+</html>
