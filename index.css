@@ -89,6 +89,7 @@ header .logo{
     color: #356045;
     font-size: 1.80em;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: all 0.2s linear;
 }
 
 header .container{
@@ -102,6 +103,7 @@ header nav{
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
+    align-items: center;
 }
 
 header a{
@@ -111,6 +113,7 @@ header a{
     font-weight: bold;
     padding: 5px 10px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: all 0.2s linear;
 }
 
 header a:hover{
@@ -160,37 +163,54 @@ header a:hover{
 }
 
 #menu {
-    background: linear-gradient(to bottom, #356045, rgba(153, 133, 133, 0.295));
-    color: rgba(153, 133, 133, 0.295);
-    border-radius: 0 0 0 40%;
-    display: scroll;
+    background: linear-gradient(to bottom, rgb(238, 231, 168), #d9ffe7);
 }
 
-#menu .container{
+.menu {
     text-align: center;
-    padding: 100px 100px;
+    padding: 20px 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #menu h2{
     font-size: 3em;
+    color: #356045
+}
+
+.h-menu{
     text-align: center;
-    text-decoration: none;
+    justify-content: center;
+    padding: 20px 100px;
+    padding-top: 50px;
 }
 
 #menu p{
     display: show;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 20px 0;
+    color: rgb(201, 201, 201)
 }
+
+.p-menu{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 30px;
+}
+
 
 #menu .carta{
     background-position: center center;
-    background-size: cover; 
-    padding: 50px 0px;
+    background-size: cover;
     margin: 50px;
     border-radius: 15px;
     color: rgba(255, 250, 250, 0.479);
     background-color: transparent;
+    height: 40vh;
 }
 
 #menu .carta:hover{
@@ -501,10 +521,6 @@ header a:hover{
         font-size: 4em;
     }
 
-    #menu .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
 
     #menu .texto{
         width: 50%;
