@@ -18,7 +18,7 @@ html, body {
 
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
-    margin: 0;
+    margin: 0 !important;
 }
 
 h1{ font-size: 3.5em; }
@@ -87,7 +87,7 @@ header .logo{
     padding: 25px 30px;
     font-weight: bold;
     color: #356045;
-    font-size: 1.80em;
+    font-size: 1.4em;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     transition: all 0.2s linear;
 }
@@ -117,6 +117,10 @@ header a{
 }
 
 header a:hover{
+    color: #327c4d;
+}
+
+header .logo:hover{
     color: #327c4d;
 }
 
@@ -186,7 +190,7 @@ header a:hover{
 }
 
 #menu p{
-    display: show;
+    display: none;
     text-align: center;
     align-items: center;
     font-size: 1.5em;
@@ -295,7 +299,6 @@ header a:hover{
 
 .footer-distributed h3{
 	color:#ffffff;
-	font: normal 36px 'Roboto', cursive;
 	margin: 0 0 10px;
 }
 
@@ -348,7 +351,7 @@ header a:hover{
 }
 
 .footer-distributed p{
-    font-size: 25px;
+    font-size: 1.2em;
 }
 
 .footer-distributed .footer-icons #fb{
@@ -374,10 +377,13 @@ header a:hover{
 }
 
 .footer-distributed .footer-right p{
-	display: inline-block;
-	vertical-align: top;
-	margin: 15px 42px 0 0;
-	color: #ffffff;
+	display: flex;
+    flex-direction: column;
+    vertical-align: bottom;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+    align-items: flex-end;
+    font-size: 1.2em;
 }
 
 /* Contacto */
@@ -449,10 +455,6 @@ header a:hover{
 }
 
 @media (max-width: 1000px) {
-
-	.footer-distributed {
-		font: bold 14px sans-serif;
-	}
 
 	.footer-distributed .footer-company-name{
 		font-size: 12px;
