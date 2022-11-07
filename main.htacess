@@ -5,3 +5,8 @@ django.views.default.page_not_found(request,exception, template=default_404_temp
 
 def handler404(request, *args, **kwargs):
     return render(request, 'error/404.html')
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
