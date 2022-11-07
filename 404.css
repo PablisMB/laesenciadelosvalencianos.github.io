@@ -185,7 +185,6 @@ h3 {
   transition: all 0.2s linear;
 }
 
-.main{
-  width: 10vh;
-  height: 10vh;
+a:link {
+  text-decoration: none;
 }
