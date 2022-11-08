@@ -21,6 +21,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif !important;
   margin: 0 !important;
+  height: calc(100vh - 60px);
 }
 
 h1 {
@@ -192,6 +193,11 @@ header .logo:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.menu h3 {
+  filter: blur(1.5em);
+  position: absolute;
 }
 
 #menu h2 {
@@ -754,3 +760,152 @@ header .logo:hover {
 .sbutton.whatsapp {
   background: #00e676;
 }
+
+@media (max-width: 450px) {
+  header .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-distributed h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-distributed a {
+    font-size: 18px;
+  }
+
+  .footer-distributed .footer-icons {
+    margin: 20px auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin: 0;
+  }
+
+  .footer-distributed .footer-right p {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  header .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-distributed h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-distributed a {
+    font-size: 18px;
+  }
+
+  .footer-distributed .footer-icons {
+    margin: 20px auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin: 0;
+  }
+
+  .footer-distributed .footer-right p {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  header .container {
+    margin: 0;
+  }
+
+  header nav {
+    padding-bottom: 15px;
+  }
+}
+
+#cookiePopup {
+  background-color: #ffffff;
+  position: absolute;
+  font-size: 14px;
+  width: 70vw;
+  max-width: 42.85em;
+  box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 2em 1.4em;
+  border-radius: 6px;
+  transition: all 0.5s ease-in;
+}
+#cookiePopup img {
+  display: block;
+  width: 10em;
+  transform: translateZ(0);
+  position: relative;
+  margin: auto;
+}
+#cookiePopup p {
+  text-align: center;
+  margin: 1.4em 0;
+}
+#cookiePopup button {
+  background-color: #6859fe;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 0.5em 0.7em;
+  display: block;
+  position: relative;
+  margin: auto;
+  border-radius: 5px;
+  width: 90px;
+  height: 70px;
+}
+#cookiePopup a {
+  color: #6859fe;
+}
+.hide {
+  visibility: hidden;
+  bottom: 0;
+  right: 2em;
+}
+.show {
+  visibility: visible;
+  bottom: 2em;
+  right: 2em;
+}
+@media only screen and (max-width: 37.5em) {
+  #cookiePopup {
+    width: 100%;
+  }
+  .hide {
+    bottom: 2em;
+    right: 0;
+  }
+  .show {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// Número gracioso

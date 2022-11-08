@@ -6,9 +6,16 @@ TOTAL: 454 líneas
 30/08/2022
 HTML: 85 líneas
 CSS: 574 líneas
-TOTAL: 659 líneas
+TOTAL: 659 líneas (205 líneas adicionales)
 
 05/11/2022
-HTML: 157 + 154 líneas
-CSS: 757 + 564 líneas
-TOTAL: 1632 líneas
+HTML: 157 + 154 líneas (311)
+CSS: 757 + 564 líneas (1321)
+TOTAL: 1632 líneas (973 líneas adicionales)
+
+08/11/2022
+HTML: 32 + 117 + 228 + 169 líneas (546)
+CSS: 195 + 681 + 404 + 911 líneas (1991)
+JS: 23 líneas (23)
+HTACESS: 12 líneas (12)
+TOTAL: 2572 líneas (940 líneas adicionales)
