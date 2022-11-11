@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -185,11 +187,11 @@ header .logo:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
-  font: bold 16px sans-serif;
   text-align: left;
   padding: 50px 60px 40px;
   overflow: hidden;
   display: inline-block;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Footer left */
