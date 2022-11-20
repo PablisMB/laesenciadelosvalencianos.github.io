@@ -1,169 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
-body {
-  background: #fff;
-  color: #000;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 28px;
-  margin: 0 !important;
-  height: calc(100vh - 60px);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-p {
-  margin: 0 0 16px;
-}
-h1 {
-  font-size: 30px;
-  line-height: 60px;
-}
-h1,
-h2 {
-  font-weight: 700;
-}
-h2 {
-  font-size: 28px;
-  line-height: 48px;
-}
-h3 {
-  font-size: 24px;
-  line-height: 36px;
-}
-h3,
-h4 {
-  font-weight: 700;
-}
-h4 {
-  font-size: 20px;
-  line-height: 30px;
-}
-h5,
-h6 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #000;
-}
-
-a:hover,
-a[rel~="nofollow"] {
-  text-decoration: underline;
-}
-
-a[rel~="nofollow"] {
-  color: #008461;
-}
-
-a[rel~="nofollow"]:hover {
-  text-decoration: none;
-}
-
-.visible {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
-.page {
-  width: 100%;
-}
-
-.container {
-  position: relative;
-  width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.header {
-  color: #000;
-  padding: 16px 0;
-  margin: 0;
-}
-
-.header .title {
-  font-size: 32px;
-  line-height: 36px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.translations-list-container {
-  padding-bottom: 8px;
-  margin: 0;
-}
-
-.translations-list-container .translations-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.translations-list-container .translations-list .translations-list-item {
-  display: inline-block;
-  padding: 0;
-  margin: 0 8px 8px 0;
-  font-weight: 700;
-  color: #008461;
-}
-
-.translations-list-container .translations-list .translations-list-item a {
-  display: inline-block;
-  color: #008461;
-  border: 2px solid #008461;
-  border-radius: 4px;
-  padding: 4px 8px;
-}
-
-.translations-content-container {
-  border-top: 1px solid #eee;
-}
-
-.footer {
-  border-top: 1px solid #eee;
-  margin: 32px 0 0;
-  padding: 16px 0;
-}
-
-@media (max-width: 450px) {
-  .footer-distributed a {
-    font-size: 18px;
-  }
-
-  .footer-distributed .footer-icons {
-    margin: 20px auto;
-  }
-
-  .footer-distributed .footer-left {
-    margin: 0;
-  }
-
-  .footer-distributed .footer-right p {
-    text-align: center;
-    font-size: 16px;
-    padding: 5px;
-  }
-}
-
 .footer-distributed {
   background: #444;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  padding: 30px 60px 40px;
+  padding: 50px 60px 40px;
   overflow: hidden;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
@@ -180,7 +21,6 @@ a[rel~="nofollow"]:hover {
 .footer-distributed h3 {
   color: #ffffff;
   margin: 0 0 10px;
-  font-size: 26px;
 }
 
 .footer-distributed h3 span {
@@ -419,33 +259,52 @@ a[rel~="nofollow"]:hover {
   }
 }
 
-.author {
-  font-size: 0.75em !important;
-  color: #999 !important;
-  text-align: center;
-  margin-top: 20px;
+@media (max-width: 450px) {
+  .footer-distributed h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .footer-distributed a {
+    font-size: 18px;
+  }
+
+  .footer-distributed .footer-icons {
+    margin: 20px auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin: 0;
+  }
+
+  .footer-distributed .footer-right p {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+  }
 }
 
-.author a {
-  text-decoration: none;
-  font-size: 1em;
-  padding-left: 5px;
-  color: #999 !important;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: all 0.2s linear;
-}
+@media (max-width: 450px) {
+  .footer-distributed h3 {
+    font-size: 26px;
+    text-align: center;
+  }
 
-.author a:hover {
-  color: #fff !important;
-  text-decoration: none;
-}
+  .footer-distributed a {
+    font-size: 18px;
+  }
 
-.author a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width 0.4s ease;
-  text-decoration: none;
+  .footer-distributed .footer-icons {
+    margin: 20px auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin: 0;
+  }
+
+  .footer-distributed .footer-right p {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+  }
 }

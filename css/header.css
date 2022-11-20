@@ -1,0 +1,81 @@
+.container {
+  margin: auto;
+}
+
+header {
+  background-color: rgb(238, 231, 168);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: #356045;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s linear;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(66, 64, 64);
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s linear;
+}
+
+header a:hover {
+  color: #327c4d;
+}
+
+header .logo:hover {
+  color: #327c4d;
+}
+
+@media (min-width: 727px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  header .logo {
+    width: 100%;
+    text-align: center;
+  }
+  header .container {
+    margin: 0;
+  }
+
+  header nav {
+    padding-bottom: 15px;
+  }
+}
