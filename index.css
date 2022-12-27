@@ -23,7 +23,9 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif !important;
   margin: 0 !important;
-  height: calc(100vh - 60px);
+  padding: 0 !important;
+  outline: 0 !important;
+  height: 100%;
 }
 
 h1 {
@@ -359,6 +361,7 @@ header .logo:hover {
   overflow: hidden;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
+  vertical-align: top;
 }
 
 /* Footer left */

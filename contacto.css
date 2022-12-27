@@ -139,6 +139,10 @@ header .logo:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 5px solid rgb(100, 177, 123);
+  border-radius: 30px;
+  padding: 5px;
+  background-color: #ffffff;
 }
 
 .contacto h3 {
@@ -151,6 +155,7 @@ header .logo:hover {
 .contacto p {
   font-size: 1em;
   font-weight: 800;
+  color: #356045;
 }
 
 .map {
@@ -176,7 +181,7 @@ header .logo:hover {
   }
 }
 
-@media (min-width: 600px and max-width: 726px) {
+@media (min-width: 600px) and (max-width: 726px) {
   header .container {
     padding-bottom: 10px;
   }
@@ -190,7 +195,6 @@ header .logo:hover {
   text-align: left;
   padding: 50px 60px 40px;
   overflow: hidden;
-  display: inline-block;
   font-family: "Open Sans", sans-serif;
 }
 

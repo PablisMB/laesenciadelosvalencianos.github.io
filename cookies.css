@@ -7,7 +7,8 @@ body {
   font-size: 16px;
   line-height: 28px;
   margin: 0 !important;
-  height: calc(100vh - 60px);
+  padding: 0 !important;
+  height: 100%;
 }
 h1,
 h2,
@@ -135,6 +136,7 @@ a[rel~="nofollow"]:hover {
   border-top: 1px solid #eee;
   margin: 32px 0 0;
   padding: 16px 0;
+  vertical-align: top;
 }
 
 @media (max-width: 450px) {
@@ -165,7 +167,6 @@ a[rel~="nofollow"]:hover {
   text-align: left;
   padding: 30px 60px 40px;
   overflow: hidden;
-  display: inline-block;
   font-family: "Open Sans", sans-serif;
 }
 
