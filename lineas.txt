@@ -19,3 +19,10 @@ CSS: 195 + 681 + 404 + 911 líneas (1991)
 JS: 23 líneas (23)
 HTACESS: 12 líneas (12)
 TOTAL: 2572 líneas (940 líneas adicionales)
+
+04/01/2023
+HTML: 39 + 131 + 272 + 219 + 136 líneas (837)
+CSS: 195 + 727 + 605 + 1290 + 707 líneas (3294)
+JS: 24 + 5 líneas (29)
+HTACESS: 12 líneas (12)
+TOTAL: 4130 líneas (1560 líneas adicionales)

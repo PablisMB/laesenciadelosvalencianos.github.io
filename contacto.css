@@ -622,7 +622,7 @@ header .logo:hover {
 
 #cookiePopup {
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   font-size: 14px;
   width: 70vw;
   max-width: 42.85em;
@@ -661,16 +661,19 @@ header .logo:hover {
 #cookiePopup a {
   color: #6859fe;
 }
+
 .hide {
   visibility: hidden;
   bottom: 0;
   right: 2em;
 }
+
 .show {
   visibility: visible;
   bottom: 2em;
   right: 2em;
 }
+
 @media only screen and (max-width: 37.5em) {
   #cookiePopup {
     width: 100%;

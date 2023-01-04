@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,9 +27,9 @@
         nuestro sitio web, usted está de acuerdo y acepta de nuestra <br />
         <a href="cookies">Política y Privacidad de las Cookies.</a>
       </p>
-      <button id="acceptCookie">Accept</button>
+      <button id="acceptCookie">Aceptar</button>
     </div>
-    <script src="script.js"></script>
+    <script src="cookies.js"></script>
     <div id="fb-root"></div>
     <script
       async
@@ -77,16 +77,50 @@
       ></a>
     </div>
 
-    <header>
+    <header class="header-wrap">
       <div class="container">
-        <a href="index">
-          <p class="logo">La Esencia de Los Valencianos</p>
-        </a>
-        <nav>
-          <a href="index">Inicio</a>
-          <a href="menu">Menú</a>
-          <a href="contacto">Contáctanos</a>
-        </nav>
+        <!-- Navigation bar -->
+        <div class="mainInner">
+          <input type="checkbox" id="off-navmenu" class="off-navmenu hidden" />
+          <label for="off-navmenu" class="cover navC"></label>
+          <div class="navbar-title">
+            <a href="index" class="logo-d">
+              <p class="logo">La Esencia de Los Valencianos</p>
+            </a>
+          </div>
+          <nav class="navbar-menu">
+            <!-- Close button -->
+            <div class="navbar-close">
+              <label aria-label="Close" for="off-navmenu" class="label-c">
+                <svg class="svg-x" viewBox="0 0 24 24">
+                  <line x1="18" x2="6" y1="6" y2="18"></line>
+                  <line x1="6" x2="18" y1="6" y2="18"></line>
+                </svg>
+              </label>
+            </div>
+            <ul>
+              <il>
+                <a href="index" class="link">Inicio</a>
+              </il>
+              <il>
+                <a href="menu" class="link">Menú</a>
+              </il>
+              <il>
+                <a href="contacto" class="link">Contáctanos</a>
+              </il>
+            </ul>
+          </nav>
+          <div class="navbar-icon">
+            <!-- Toggle menu -->
+            <label aria-label="Navigation menu" for="off-navmenu">
+              <svg viewBox="0 0 24 24">
+                <line x1="3" x2="21" y1="12" y2="12"></line>
+                <line x1="3" x2="21" y1="6" y2="6"></line>
+                <line x1="3" x2="21" y1="18" y2="18"></line>
+              </svg>
+            </label>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -152,7 +186,7 @@
           <a href="cookies">Cookies</a>
         </p>
         <p class="footer-company-name">
-          La Esencia de los Valencianos © 2022-2022
+          La Esencia de los Valencianos © 2022-2023
         </p>
         <div class="footer-icons">
           <a
