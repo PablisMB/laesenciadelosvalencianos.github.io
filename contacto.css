@@ -208,7 +208,6 @@ header .logo:hover {
   padding: 50px 60px 40px;
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
-  height: calc(100vh - 85px);
 }
 
 /* Footer left */
