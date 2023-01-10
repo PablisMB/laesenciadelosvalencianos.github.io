@@ -19,17 +19,318 @@
   </head>
   <body>
     <div class="page">
-      <div class="slider-box">
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider" onclick="toggleTheme()"></span>
-        </label>
+      <div class="themeChanger">
+        <div class="circle-close">
+          <svg
+            class="close-svg-dark"
+            id="close-svg-d"
+            fill="#000000"
+            width="32px"
+            height="32px"
+            viewBox="-14 -14 84.00 84.00"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#000000"
+            stroke-width="1.12"
+            transform="rotate(0)"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M 13.8320 43.5625 C 14.4883 43.5625 14.9336 43.3516 15.4258 43.1172 L 41.7695 31.2813 C 43.1055 30.6484 44.1602 29.6172 44.1602 28.1172 C 44.1602 26.6406 43.1289 25.5625 41.7461 24.9532 L 15.4258 12.8359 C 14.9570 12.6016 14.5351 12.4375 13.9258 12.4375 C 12.7070 12.4375 11.8398 13.2813 11.8398 14.5235 C 11.8398 15.6016 12.4023 16.2110 13.3867 16.6797 L 38.6055 27.8125 L 38.6055 28.0703 L 13.3867 39.2969 C 12.4023 39.7656 11.8398 40.3750 11.8398 41.4531 C 11.8398 42.7422 12.6836 43.5625 13.8320 43.5625 Z"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            class="close-svg-light"
+            id="close-svg-l"
+            fill="#ffffff"
+            width="32px"
+            height="32px"
+            viewBox="-14 -14 84.00 84.00"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#ffffff"
+            stroke-width="1.12"
+            transform="rotate(0)"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M 13.8320 43.5625 C 14.4883 43.5625 14.9336 43.3516 15.4258 43.1172 L 41.7695 31.2813 C 43.1055 30.6484 44.1602 29.6172 44.1602 28.1172 C 44.1602 26.6406 43.1289 25.5625 41.7461 24.9532 L 15.4258 12.8359 C 14.9570 12.6016 14.5351 12.4375 13.9258 12.4375 C 12.7070 12.4375 11.8398 13.2813 11.8398 14.5235 C 11.8398 15.6016 12.4023 16.2110 13.3867 16.6797 L 38.6055 27.8125 L 38.6055 28.0703 L 13.3867 39.2969 C 12.4023 39.7656 11.8398 40.3750 11.8398 41.4531 C 11.8398 42.7422 12.6836 43.5625 13.8320 43.5625 Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <svg
+          class="sun-dark"
+          width="64px"
+          height="64px"
+          viewBox="-6 -6 36.00 36.00"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M12 16C9.7944 16 8 14.2056 8 12C8 9.7944 9.7944 8 12 8C14.2056 8 16 9.7944 16 12C16 14.2056 14.2056 16 12 16Z"
+              stroke="#000000"
+            ></path>
+            <path
+              d="M12 3.5V5.5"
+              stroke="#000000"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M20.5 12H18.5"
+              stroke="#000000"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M5.5 12H3.5"
+              stroke="#000000"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M12 18.5V20.5"
+              stroke="#000000"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M16.5 7.5L18 6"
+              stroke="#000000"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M6 18L7.5 16.5"
+              stroke="#000000"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M6 6L7.5 7.5"
+              stroke="#000000"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M16.5 16.5L18 18"
+              stroke="#000000"
+              stroke-linecap="round"
+            ></path>
+          </g>
+        </svg>
+
+        <svg
+          class="sun-light"
+          width="64px"
+          height="64px"
+          viewBox="-6 -6 36.00 36.00"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#ffffff"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M12 16C9.7944 16 8 14.2056 8 12C8 9.7944 9.7944 8 12 8C14.2056 8 16 9.7944 16 12C16 14.2056 14.2056 16 12 16Z"
+              stroke="fff"
+            ></path>
+            <path d="M12 3.5V5.5" stroke="fff" stroke-linecap="round"></path>
+            <path d="M20.5 12H18.5" stroke="fff" stroke-linecap="round"></path>
+            <path d="M5.5 12H3.5" stroke="fff" stroke-linecap="round"></path>
+            <path d="M12 18.5V20.5" stroke="fff" stroke-linecap="round"></path>
+            <path d="M16.5 7.5L18 6" stroke="fff" stroke-linecap="round"></path>
+            <path d="M6 18L7.5 16.5" stroke="fff" stroke-linecap="round"></path>
+            <path d="M6 6L7.5 7.5" stroke="fff" stroke-linecap="round"></path>
+            <path
+              d="M16.5 16.5L18 18"
+              stroke="fff"
+              stroke-linecap="round"
+            ></path>
+          </g>
+        </svg>
+
+        <div class="slider-box">
+          <label class="switch">
+            <input type="checkbox" />
+            <span
+              class="slider"
+              onclick="toggleTheme()"
+              id="dark-mode-toggle"
+            ></span>
+          </label>
+        </div>
         <script>
           function toggleTheme() {
             var body = document.body;
             body.classList.toggle("dark-theme");
           }
+
+          const themeChanger = document.querySelector(".themeChanger");
+          const closeSVG_l = document.querySelector("#close-svg-l");
+
+          closeSVG_l.addEventListener("click", function () {
+            themeChanger.classList.toggle("move-items");
+            closeSVG_l.classList.toggle("rotate-svg");
+          });
+
+          const closeSVG_d = document.querySelector("#close-svg-d");
+
+          closeSVG_d.addEventListener("click", function () {
+            themeChanger.classList.toggle("move-items");
+            closeSVG_d.classList.toggle("rotate-svg");
+          });
+
+          /*
+
+          let theme = "light";
+          let clicks = 0;
+
+          const switchTheme = () => {
+            const root = document.documentElement;
+            if (theme === "light") {
+              root.style.setProperty("--bg-color", "#111111");
+              root.style.setProperty("--text-color", "#FFFFFF");
+              theme = "dark";
+            } else {
+              root.style.setProperty("--bg-color", "#FFFFFF");
+              root.style.setProperty("--text-color", "#111111");
+              theme = "light";
+            }
+          };
+
+          const slider = document.querySelector(".slider");
+          slider.addEventListener("click", () => {
+            clicks++;
+            localStorage.setItem("clicks", clicks);
+            switchTheme();
+          });
+
+          if (localStorage.getItem("clicks")) {
+            clicks = parseInt(localStorage.getItem("clicks"));
+          }
+
+          if (clicks % 2 !== 0) {
+            switchTheme();
+          }
+
+          */
         </script>
+        <svg
+          class="moon-dark"
+          width="64px"
+          height="64px"
+          viewBox="-7.2 -7.2 38.40 38.40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#000000"
+          transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#CCCCCC"
+            stroke-width="0.768"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M20.9931 13.3127C20.5158 13.435 20.0155 13.5 19.5 13.5C16.1863 13.5 13.5 10.8137 13.5 7.5C13.5 6.98452 13.565 6.48422 13.6873 6.00686C9.9664 6.17045 7 9.2388 7 13C7 16.866 10.134 20 14 20C17.7612 20 20.8295 17.0336 20.9931 13.3127Z"
+              ffffffill="ffffff"
+            ></path>
+            <path
+              ffffffill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.5 8.25C4.77614 8.25 5 8.47386 5 8.75V10.25C5 10.5261 4.77614 10.75 4.5 10.75C4.22386 10.75 4 10.5261 4 10.25V8.75C4 8.47386 4.22386 8.25 4.5 8.25Z"
+              ffffffill="ffffff"
+            ></path>
+            <path
+              ffffffill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.25 9.5C3.25 9.22386 3.47386 9 3.75 9H5.25C5.52614 9 5.75 9.22386 5.75 9.5C5.75 9.77614 5.52614 10 5.25 10H3.75C3.47386 10 3.25 9.77614 3.25 9.5Z"
+              ffffffill="ffffff"
+            ></path>
+            <path
+              ffffffill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.5 3C7.77614 3 8 3.22386 8 3.5V5.5C8 5.77614 7.77614 6 7.5 6C7.22386 6 7 5.77614 7 5.5V3.5C7 3.22386 7.22386 3 7.5 3Z"
+              ffffffill="ffffff"
+            ></path>
+            <path
+              ffffffill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6 4.5C6 4.22386 6.22386 4 6.5 4H8.5C8.77614 4 9 4.22386 9 4.5C9 4.77614 8.77614 5 8.5 5H6.5C6.22386 5 6 4.77614 6 4.5Z"
+              ffffffill="ffffff"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          class="moon-light"
+          width="64px"
+          height="64px"
+          viewBox="-7.2 -7.2 38.40 38.40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#fff"
+          transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke="#CCCCCC"
+            stroke-width="0.768"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M20.9931 13.3127C20.5158 13.435 20.0155 13.5 19.5 13.5C16.1863 13.5 13.5 10.8137 13.5 7.5C13.5 6.98452 13.565 6.48422 13.6873 6.00686C9.9664 6.17045 7 9.2388 7 13C7 16.866 10.134 20 14 20C17.7612 20 20.8295 17.0336 20.9931 13.3127Z"
+              ffffffill="ffffff"
+            ></path>
+            <path
+              ffffffill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.5 8.25C4.77614 8.25 5 8.47386 5 8.75V10.25C5 10.5261 4.77614 10.75 4.5 10.75C4.22386 10.75 4 10.5261 4 10.25V8.75C4 8.47386 4.22386 8.25 4.5 8.25Z"
+              ffffffill="ffffff"
+            ></path>
+            <path
+              ffffffill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.25 9.5C3.25 9.22386 3.47386 9 3.75 9H5.25C5.52614 9 5.75 9.22386 5.75 9.5C5.75 9.77614 5.52614 10 5.25 10H3.75C3.47386 10 3.25 9.77614 3.25 9.5Z"
+              ffffffill="ffffff"
+            ></path>
+            <path
+              ffffffill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.5 3C7.77614 3 8 3.22386 8 3.5V5.5C8 5.77614 7.77614 6 7.5 6C7.22386 6 7 5.77614 7 5.5V3.5C7 3.22386 7.22386 3 7.5 3Z"
+              ffffffill="ffffff"
+            ></path>
+            <path
+              ffffffill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6 4.5C6 4.22386 6.22386 4 6.5 4H8.5C8.77614 4 9 4.22386 9 4.5C9 4.77614 8.77614 5 8.5 5H6.5C6.22386 5 6 4.77614 6 4.5Z"
+              ffffffill="ffffff"
+            ></path>
+          </g>
+        </svg>
       </div>
       <div class="all-content">
         <div id="cookiePopup" class="hide">
@@ -57,7 +358,7 @@
               id="en"
             >
               <h1>Política de Cookies</h1>
-              <p>Última vez actualizado: November 07, 2022</p>
+              <p>Última vez actualizado: Noviembre 07, 2022</p>
               <p>
                 Las cookies no suelen contener ninguna información que
                 identifique personalmente al usuario personalmente a un usuario,

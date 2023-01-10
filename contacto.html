@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="contacto.css" />
     <title>Contacto | La Esencia de Los Valencianos</title>
     <link
@@ -28,17 +32,91 @@
       </p>
       <button id="acceptCookie">Aceptar</button>
     </div>
+
     <script src="cookies.js"></script>
-    <header>
+
+    <div class="sbuttons">
+      <a
+        href="https://api.whatsapp.com/send?text=Cafetería / Heladería La Esencia de Los Valencianos en https://laesenciadelosvalencianos.live"
+        target="_blank"
+        class="sbutton whatsapp"
+        tooltip="WhatsApp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FLaEsenciaDeLosValencianos%2F&amp;src=sdkpreparse"
+        target="_blank"
+        class="sbutton fb"
+        tooltip="Facebook"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <a
+        href="http://twitter.com/share?text=Heladería / Cafetería La Esencia de Los Valencianos&url=https://laesenciadelosvalencianos.livehashtags=heladería,cafetería,mérida"
+        target="_blank"
+        class="sbutton twitt"
+        tooltip="Twitter"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <a
+        href="//pinterest.com/pin/create/link/?url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FLa%2BEsencia%2Bde%2Blos%2BValencianos%2F%4038.9181301%2C-6.3438216%2C20.08z%2Fdata%3D!4m5!3m4!1s0xd1427b01bb3d7a5%3A0x894229faa19dfdd9!8m2!3d38.9181438!4d-6.3435196&media=https%3A%2F%2Fimgur.com%2Fa%2FKSQZ4vs&description=Cafeter%C3%ADa%20%2F%20Helader%C3%ADa%20La%20Esencia%20de%20Los%20Valencianos"
+        target="_blank"
+        class="sbutton pinteres"
+        tooltip="Pinterest"
+        ><i class="fab fa-pinterest-p"></i
+      ></a>
+
+      <a target="_blank" class="sbutton mainsbutton" tooltip="Share"
+        ><i class="fas fa-share-alt"></i
+      ></a>
+    </div>
+
+    <header class="header-wrap">
       <div class="container">
-        <a href="index">
-          <p class="logo">La Esencia de Los Valencianos</p>
-        </a>
-        <nav>
-          <a href="index">Inicio</a>
-          <a href="menu">Menú</a>
-          <a href="contacto">Contáctanos</a>
-        </nav>
+        <!-- Navigation bar -->
+        <div class="mainInner">
+          <input type="checkbox" id="off-navmenu" class="off-navmenu hidden" />
+          <label for="off-navmenu" class="cover navC"></label>
+          <div class="navbar-title">
+            <a href="index" class="logo-d">
+              <p class="logo">La Esencia de Los Valencianos</p>
+            </a>
+          </div>
+          <nav class="navbar-menu">
+            <!-- Close button -->
+            <div class="navbar-close">
+              <label aria-label="Close" for="off-navmenu" class="label-c">
+                <svg class="svg-x" viewBox="0 0 24 24">
+                  <line x1="18" x2="6" y1="6" y2="18"></line>
+                  <line x1="6" x2="18" y1="6" y2="18"></line>
+                </svg>
+              </label>
+            </div>
+            <ul>
+              <il>
+                <a href="index" class="link">Inicio</a>
+              </il>
+              <il>
+                <a href="menu" class="link">Menú</a>
+              </il>
+              <il>
+                <a href="contacto" class="link">Contáctanos</a>
+              </il>
+            </ul>
+          </nav>
+          <div class="navbar-icon">
+            <!-- Toggle menu -->
+            <label aria-label="Navigation menu" for="off-navmenu">
+              <svg viewBox="0 0 24 24">
+                <line x1="3" x2="21" y1="12" y2="12"></line>
+                <line x1="3" x2="21" y1="6" y2="6"></line>
+                <line x1="3" x2="21" y1="18" y2="18"></line>
+              </svg>
+            </label>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -104,14 +182,14 @@
           La Esencia de los Valencianos © 2022-2023
         </p>
         <div class="footer-icons">
-          <a id="fb" href="https://es-es.facebook.com/LaEsenciaDeLosValencianos"
-            ><i class="fa-facebook"></i
+          <a
+            id="fb"
+            href="https://es-es.facebook.com/LaEsenciaDeLosValencianos"
           ></a>
-          <a id="ig" href="url"><i class="fa-instagram"></i></a>
+          <a id="ig" href="url"></a>
           <a
             id="maps"
             href="https://www.google.com/maps/place/La+Esencia+de+los+Valencianos/@38.9181301,-6.3438216,20.08z/data=!4m5!3m4!1s0xd1427b01bb3d7a5:0x894229faa19dfdd9!8m2!3d38.9181438!4d-6.3435196"
-            ><i class="fa-maps"></i
           ></a>
         </div>
       </div>

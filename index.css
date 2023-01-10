@@ -362,6 +362,7 @@ header .logo:hover {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   vertical-align: top;
+  height: calc(100vh - 85px);
 }
 
 /* Footer left */
@@ -1006,8 +1007,11 @@ header .logo:hover {
     display: flex;
     align-items: center;
     font-size: 15px;
-    color: #e0e0e2;
     width: 100%;
+  }
+
+  .navbar-menu .link::hover {
+    color: #356045;
   }
 
   .navbar-close,
@@ -1251,6 +1255,10 @@ header .logo:hover {
     padding: 14px 22px;
   }
 
+  .navbar-menu .link::hover {
+    color: #356045;
+  }
+
   .navbar-close,
   .navbar-icon,
   .navbar-icon > * {
@@ -1270,8 +1278,10 @@ header .logo:hover {
   .navbar-close label::before {
     content: "Cerrar";
     font-size: 17px;
-    color: #e0e0e2;
+    color: rgb(66, 64, 64);
     opacity: 0.9;
+    cursor: pointer;
+    transition: 0.2s ease;
   }
 
   .off-navmenu:checked ~ .navbar-menu {

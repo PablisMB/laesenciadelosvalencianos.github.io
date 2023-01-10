@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+}
+
 body {
-  background: #fff;
-  color: #000;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 28px;
@@ -187,6 +192,12 @@ a[rel~="nofollow"]:hover {
   color: #4d9c6a;
 }
 
+@media screen and (max-width: 726px) {
+  .footer-distributed h3 {
+    text-align: center;
+  }
+}
+
 /* Footer links */
 
 .footer-distributed .footer-links {
@@ -354,6 +365,7 @@ a[rel~="nofollow"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .footer-distributed .footer-left,
@@ -459,21 +471,131 @@ a[rel~="nofollow"]:hover {
   );
   --toggle-shadow-offset: 10px;
   --toggle-wider: 3em;
-  --color-grey: #cccccc;
-  --color-green: #494949;
+  --color-yellow: #fcff47;
+  --color-grey: #5f5c51;
 }
 
 .slider {
   display: inline-block;
   width: var(--button-width);
   height: var(--button-height);
-  background-color: var(--color-grey);
+  background-color: var(--color-yellow);
   border-radius: calc(var(--button-height) / 2);
   position: fixed;
   transition: 0.3s all ease-in-out;
   transform: rotate(90deg);
   z-index: 1;
-  top: 18px;
+  top: 50%;
+  left: -0.3%;
+}
+
+.themeChanger {
+  display: flex;
+  height: 170px;
+  width: 64px;
+  position: fixed;
+  top: calc(50% - 70px);
+  background-color: rgb(255, 250, 209);
+  z-index: 1;
+  border-radius: 0 25px 25px 0;
+  border: solid 2px rgb(201, 201, 201);
+  justify-content: flex-end;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.move-items {
+  transform: translateX(-56px);
+}
+
+body.dark-theme .themeChanger {
+  background-color: rgb(48, 48, 48);
+  border: solid 2px rgb(201, 201, 201);
+}
+
+.close-svg-dark,
+.close-svg-light {
+  transform: rotate(180deg);
+}
+
+.close-svg-light {
+  display: none;
+}
+
+.close-svg-dark {
+  display: block;
+}
+
+body.dark-theme .close-svg-dark {
+  display: none;
+}
+
+body.dark-theme .close-svg-light {
+  display: block;
+}
+
+.circle-close {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  transform: translate(17px);
+  border: solid 2px rgb(201, 201, 201);
+  cursor: pointer;
+}
+
+body.dark-theme .circle-close {
+  background-color: rgb(48, 48, 48);
+  border: solid 2px rgb(201, 201, 201);
+}
+
+svg.sun-dark,
+svg.sun-light {
+  top: calc(50% - 70px);
+  left: -0.85%;
+  position: fixed;
+  z-index: 9;
+}
+
+svg.moon-dark,
+svg.moon-light {
+  top: calc(50% + 40px);
+  left: -0.95%;
+  position: fixed;
+  z-index: 9;
+}
+
+body svg.sun-light {
+  display: none;
+}
+
+body.dark-theme svg.sun-dark {
+  display: none;
+}
+
+body.dark-theme svg.sun-light {
+  display: block;
+}
+
+body svg.moon-light {
+  display: none;
+}
+
+body.dark-theme svg.moon-dark {
+  display: none;
+}
+
+body.dark-theme svg.moon-light {
+  display: block;
+}
+
+.rotate-svg {
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+
+#close-svg {
+  transition: transform 0.5s;
 }
 
 .slider::after {
@@ -492,7 +614,7 @@ a[rel~="nofollow"]:hover {
 }
 
 .switch input[type="checkbox"]:checked + .slider {
-  background-color: var(--color-green);
+  background-color: var(--color-grey);
 }
 
 .switch input[type="checkbox"]:checked + .slider::after {
@@ -535,7 +657,11 @@ a[rel~="nofollow"]:hover {
   border-radius: 6px;
   transition: all 0.5s ease-in;
   z-index: 9999;
-  opacity: 90%;
+}
+
+body.dark-theme #cookiePopup {
+  background-color: #1e1e1e;
+  color: #ffffff;
 }
 
 #cookiePopup img {
@@ -563,7 +689,9 @@ a[rel~="nofollow"]:hover {
   border-radius: 5px;
   width: 90px;
   height: 70px;
+  cursor: pointer;
 }
+
 #cookiePopup a {
   color: #6859fe;
 }
@@ -594,7 +722,12 @@ a[rel~="nofollow"]:hover {
   }
 }
 
-.dark-theme {
+body.dark-theme {
+  background-color: #212121 !important;
+  color: white !important;
+}
+
+body.dark-mode {
   background-color: #212121 !important;
   color: white !important;
 }
