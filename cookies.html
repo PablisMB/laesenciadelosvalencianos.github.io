@@ -25,21 +25,36 @@
           body.classList.toggle("dark-theme");
         }
 
-        const themeChanger = document.querySelector(".themeChanger");
-        const closeSVG_l = document.querySelector("#close-svg-l");
+        let theme = "light";
+        let clicks = 0;
 
-        closeSVG_l.addEventListener("click", function () {
-          themeChanger.classList.toggle("move-items");
-          closeSVG_l.classList.toggle("rotate-svg");
+        const switchTheme = () => {
+          const root = document.documentElement;
+          if (theme === "light") {
+            root.style.setProperty("--bg-color", "#111111");
+            root.style.setProperty("--text-color", "#FFFFFF");
+            theme = "dark";
+          } else {
+            root.style.setProperty("--bg-color", "#FFFFFF");
+            root.style.setProperty("--text-color", "#111111");
+            theme = "light";
+          }
+        };
+
+        const switcht = document.querySelector("#enc-a");
+        switcht.addEventListener("click", () => {
+          clicks++;
+          localStorage.setItem("clicks", clicks);
+          switchTheme();
         });
 
-        const closeSVG_d = document.querySelector("#close-svg-d");
+        if (localStorage.getItem("clicks")) {
+          clicks = parseInt(localStorage.getItem("clicks"));
+        }
 
-        closeSVG_d.addEventListener("click", function () {
-          themeChanger.classList.toggle("move-items");
-          closeSVG_d.classList.toggle("rotate-svg");
-        });
-
+        if (clicks % 2 !== 0) {
+          switchTheme();
+        }
         /*
 
           let theme = "light";
@@ -58,8 +73,8 @@
             }
           };
 
-          const slider = document.querySelector(".slider");
-          slider.addEventListener("click", () => {
+          const switcht = document.querySelector(".switcht");
+          switcht.addEventListener("click", () => {
             clicks++;
             localStorage.setItem("clicks", clicks);
             switchTheme();
@@ -88,6 +103,7 @@
           <button id="acceptCookie">Aceptar</button>
         </div>
         <script src="cookies.js"></script>
+
         <div class="header">
           <div class="container">
             <p class="title">
@@ -305,9 +321,9 @@
                   </p>
                 </li>
                 <li>
-                  <p><strong>Functionality Cookies</strong></p>
-                  <p>Type: Persistent Cookies</p>
-                  <p>Administered by: Us</p>
+                  <p><strong>Cookies de funcionalidad</strong></p>
+                  <p>Tipo: Cookies persistentes</p>
+                  <p>Administradas por: Nosotros</p>
                   <p>
                     Cookies de Funcionalidad Tipo: Cookies persistentes
                     Administradas por: Nosotros Propósito: Estas cookies nos

@@ -2,7 +2,8 @@ let popUp = document.getElementById("cookiePopup");
 document.getElementById("acceptCookie").addEventListener("click", () => {
   let d = new Date();
   d.setMinutes(2 + d.getMinutes());
-  document.cookie = "googleMaps-cookie-accepted=consent=true; expires = " + d + ";";
+  document.cookie =
+    "googleMaps-cookie-accepted=consent=true; expires = " + d + ";";
   popUp.classList.add("hide");
   popUp.classList.remove("show");
 });

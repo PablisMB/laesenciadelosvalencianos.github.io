@@ -21,6 +21,8 @@
     ></script>
   </head>
 
+  <script src="header.js"></script>
+
   <body>
     <div id="cookiePopup" class="hide">
       <img src="./fotos/cookie.png" />
@@ -80,9 +82,8 @@
       ></a>
     </div>
 
-    <header class="header-wrap">
+    <header class="header-wrap unscrolled" id="header">
       <div class="container">
-        <!-- Navigation bar -->
         <div class="mainInner">
           <input type="checkbox" id="off-navmenu" class="off-navmenu hidden" />
           <label for="off-navmenu" class="cover navC"></label>
@@ -92,7 +93,6 @@
             </a>
           </div>
           <nav class="navbar-menu">
-            <!-- Close button -->
             <div class="navbar-close">
               <label aria-label="Close" for="off-navmenu" class="label-c">
                 <svg class="svg-x" viewBox="0 0 24 24">
@@ -148,13 +148,12 @@
                       ></path>
                     </g>
                   </svg>
-                  Encuéntranos</a
+                  <span class="enc-t link"> Encuéntranos </span></a
                 >
               </il>
             </ul>
           </nav>
           <div class="navbar-icon">
-            <!-- Toggle menu -->
             <label aria-label="Navigation menu" for="off-navmenu">
               <svg viewBox="0 0 24 24">
                 <line x1="3" x2="21" y1="12" y2="12"></line>
@@ -168,7 +167,7 @@
     </header>
 
     <section id="inicio">
-      <h1>Pedir ya!</h1>
+      <h1>Pide ya!</h1>
       <div class="container">
         <form
           action="https://www.just-eat.es/restaurants-la-esencia-de-los-valencianos-badajoz/menu"
@@ -186,6 +185,10 @@
       <h4>
         *El horario de entregas puede variar según la empresa o no estar activo
       </h4>
+    </section>
+
+    <section>
+      <div class="map"></div>
     </section>
 
     <section id="menu">
