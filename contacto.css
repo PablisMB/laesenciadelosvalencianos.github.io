@@ -88,8 +88,10 @@ header.scrolled {
   background-color: rgb(238, 231, 168);
 }
 
+/* background-color: rgb(238, 231, 168); */
+
 header.unscrolled {
-  background-color: rgb(238, 231, 168);
+  background: linear-gradient(to bottom, rgb(238, 231, 168), rgb(156, 255, 186));
 }
 
 header.unscrolled .logo {
@@ -127,6 +129,7 @@ header nav {
 header.scrolled a {
   text-decoration: none;
   color: rgb(66, 64, 64);
+  
   font-size: 1.25em;
   font-weight: bold;
   padding: 5px 10px;
@@ -260,7 +263,6 @@ header .logo:hover {
 @media (min-width: 727px) {
   header {
     position: fixed;
-    width: 100%;
     z-index: 100;
     display: flex;
   }
@@ -913,7 +915,7 @@ header .logo:hover {
     top: 0;
     right: -100%;
     bottom: 0;
-    width: 40%;
+    width: 55%;
     height: 100vh;
     z-index: 20;
     opacity: 0;

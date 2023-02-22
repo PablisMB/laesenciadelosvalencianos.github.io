@@ -1199,6 +1199,7 @@ header .logo:hover {
   border-radius: 5px;
   width: 90px;
   height: 70px;
+  cursor: pointer;
 }
 #cookiePopup a {
   color: #6859fe;
@@ -1334,7 +1335,7 @@ header.scrolled.header-wrap .container .mainInner {
     top: 0;
     right: -100%;
     bottom: 0;
-    width: 40%;
+    width: 55%;
     height: 100vh;
     z-index: 20;
     opacity: 0;
