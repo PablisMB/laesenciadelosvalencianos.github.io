@@ -15,17 +15,17 @@
       href="https://scontent.fsvq2-2.fna.fbcdn.net/v/t39.30808-6/218393469_309386677287626_4013226520040124999_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=J_e1h-fxDRIAX_tF5bV&_nc_ht=scontent.fsvq2-2.fna&oh=00_AfBwr0tueUvYdghLXv_6sB9uy1tomUewrEDWEhkRTz6n1g&oe=63BBFFCD"
     />
     <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6316643581167543"
-      crossorigin="anonymous"
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+      const
+      observer="lozad();"
+      observer.observe();
     ></script>
   </head>
 
-  <script src="header.js"></script>
-
   <body>
     <div id="cookiePopup" class="hide">
-      <img src="./fotos/cookie.png" />
+      <img class="lozad" data-src="./fotos/cookie.png" alt="" />
       <p>
         Nuestro sitio web utiliza cookies para proporcionar su experiencia de
         navegación e información relevante. Antes de continuar utilizando
@@ -34,19 +34,12 @@
       </p>
       <button id="acceptCookie">Aceptar</button>
     </div>
-    <script src="cookies.js"></script>
     <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0"
-      nonce="2dVIQL7s"
-    ></script>
 
     <div class="sbuttons">
       <a
         href="https://api.whatsapp.com/send?text=Cafetería / Heladería La Esencia de Los Valencianos en https://laesenciadelosvalencianos.live"
+        aria-label="WhatsApp"
         target="_blank"
         class="sbutton whatsapp"
         tooltip="WhatsApp"
@@ -56,6 +49,7 @@
       <a
         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FLaEsenciaDeLosValencianos%2F&amp;src=sdkpreparse"
         target="_blank"
+        aria-label="Facebook"
         class="sbutton fb"
         tooltip="Facebook"
         ><i class="fab fa-facebook-f"></i
@@ -64,6 +58,7 @@
       <a
         href="http://twitter.com/share?text=Heladería / Cafetería La Esencia de Los Valencianos&url=https://laesenciadelosvalencianos.livehashtags=heladería,cafetería,mérida"
         target="_blank"
+        aria-label="Twitter"
         class="sbutton twitt"
         tooltip="Twitter"
         ><i class="fab fa-twitter"></i
@@ -72,12 +67,17 @@
       <a
         href="//pinterest.com/pin/create/link/?url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FLa%2BEsencia%2Bde%2Blos%2BValencianos%2F%4038.9181301%2C-6.3438216%2C20.08z%2Fdata%3D!4m5!3m4!1s0xd1427b01bb3d7a5%3A0x894229faa19dfdd9!8m2!3d38.9181438!4d-6.3435196&media=https%3A%2F%2Fimgur.com%2Fa%2FKSQZ4vs&description=Cafeter%C3%ADa%20%2F%20Helader%C3%ADa%20La%20Esencia%20de%20Los%20Valencianos"
         target="_blank"
+        aria-label="Pinterest"
         class="sbutton pinteres"
         tooltip="Pinterest"
         ><i class="fab fa-pinterest-p"></i
       ></a>
 
-      <a target="_blank" class="sbutton mainsbutton" tooltip="Share"
+      <a
+        target="_blank"
+        class="sbutton mainsbutton"
+        tooltip="Share"
+        aria-label="Share"
         ><i class="fas fa-share-alt"></i
       ></a>
     </div>
@@ -197,24 +197,20 @@
       </div>
       <div class="menu">
         <div class="carta" id="carta">
-          <div class="p-menu">
-            <p>
-              El desayuno es la comida más importante del día. Por ello, con La
-              Esencia De Los Valencianos podrás disfrutar de los mejores
-              desayunos de todo Mérida. Comienza tu día probando sus deliciosos
-              manjares. Elige lo que más te apetezca y haz tu pedido ahora
-              mediante nuestros proveedores. <br />
-              <br />
-              ¡Buenos días! <br />
-              <br />
-              Nuestro menú: <a href="./documentos/menu.pdf">Aquí</a>
-            </p>
-          </div>
+          <p>
+            El desayuno es la comida más importante del día. Por ello, con La
+            Esencia De Los Valencianos podrás disfrutar de los mejores desayunos
+            de todo Mérida. Comienza tu día probando sus deliciosos manjares.
+            Elige lo que más te apetezca y haz tu pedido ahora mediante nuestros
+            proveedores. <br />
+            <br />
+            ¡Buenos días! <br />
+            <br />
+            Nuestro menú: <a href="./documentos/menu.pdf">Aquí</a>
+          </p>
         </div>
         <div class="carta" id="carta">
-          <div class="img-menu">
-            <img src="./fotos/postres.png" />
-          </div>
+          <div class="img-menu"></div>
         </div>
       </div>
     </section>
@@ -260,5 +256,15 @@
         </p>
       </div>
     </footer>
+
+    <script src="header.js"></script>
+    <script src="cookies.js"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0"
+      nonce="2dVIQL7s"
+    ></script>
   </body>
 </html>

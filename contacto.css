@@ -14,6 +14,8 @@ body {
     "Lucida Sans", Arial, sans-serif !important;
   margin: 0 !important;
   height: 100%;
+  width: 100%;
+  background-color: #9cffba;
   overflow-x: hidden;
 }
 
@@ -91,7 +93,11 @@ header.scrolled {
 /* background-color: rgb(238, 231, 168); */
 
 header.unscrolled {
-  background: linear-gradient(to bottom, rgb(238, 231, 168), rgb(156, 255, 186));
+  background: linear-gradient(
+    to bottom,
+    rgb(238, 231, 168),
+    rgb(156, 255, 186)
+  );
 }
 
 header.unscrolled .logo {
@@ -106,7 +112,6 @@ header.unscrolled .logo {
 
 header.scrolled .logo {
   margin: 0;
-  padding: 0px 25px;
   font-weight: bold;
   color: #356045;
   font-size: 1.2em;
@@ -129,7 +134,6 @@ header nav {
 header.scrolled a {
   text-decoration: none;
   color: rgb(66, 64, 64);
-  
   font-size: 1.25em;
   font-weight: bold;
   padding: 5px 10px;
@@ -1171,7 +1175,7 @@ header .logo:hover {
   }
 
   .navbar-close {
-    padding: 14px 22px;
+    padding: 30px 22px 14px 22px !important;
     justify-content: flex-end;
     width: 100%;
   }
@@ -1260,7 +1264,7 @@ header .logo:hover {
 }
 
 header.scrolled.header-wrap .container .mainInner {
-  padding: 0 20px;
+  padding: 0 10px 0 20px;
   height: 60px;
   transition: all 0.3s ease;
 }

@@ -642,6 +642,7 @@ body.dark-theme #cookiePopup {
 #cookiePopup img {
   display: block;
   width: 10em;
+  height: 100%;
   transform: translateZ(0);
   position: relative;
   margin: auto;
