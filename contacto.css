@@ -741,6 +741,7 @@ header .logo:hover {
   padding: 2em 1.4em;
   border-radius: 6px;
   transition: all 0.5s ease-in;
+  z-index: 9999;
 }
 
 #cookiePopup img {
@@ -910,8 +911,8 @@ header .logo:hover {
 }
 
 @media screen and (max-width: 726px) {
-  .map iframe {
-    scale: calc(100% / 1.5);
+  .map {
+    display: none;
   }
 
   .navbar-menu {
