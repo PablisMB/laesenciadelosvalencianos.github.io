@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-display: swap;
 }
 
 html,
@@ -60,14 +61,14 @@ svg {
 }
 
 #justeat {
-  background-image: url("./fotos/justeat.jpg");
+  background-image: url("./fotos/justeat.webp");
   background-size: cover;
   width: 130px;
   height: 130px;
 }
 
 #glovo {
-  background-image: url("./fotos/glovo.png");
+  background-image: url("./fotos/glovo.webp");
   background-size: cover;
   width: 130px;
   height: 130px;
@@ -231,7 +232,7 @@ header .logo:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("fotos/cafeteria.png");
+    url("fotos/cafeteria.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -349,7 +350,7 @@ header .logo:hover {
 .img-menu {
   width: 90%;
   height: 90%;
-  background-image: url("/fotos/postres.png");
+  background-image: url("/fotos/postres.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -482,17 +483,17 @@ header .logo:hover {
 }
 
 .footer-distributed .footer-icons #fb {
-  background-image: url("./fotos/facebuk.png");
+  background-image: url("./fotos/facebuk.webp");
   background-size: 50px 50px;
 }
 
 .footer-distributed .footer-icons #ig {
-  background-image: url("./fotos/instagram3.png");
+  background-image: url("./fotos/instagram3.webp");
   background-size: 50px 50px;
 }
 
 .footer-distributed .footer-icons #maps {
-  background-image: url("./fotos/periscope.png");
+  background-image: url("./fotos/periscope.webp");
   background-size: 50px 50px;
 }
 
@@ -715,14 +716,6 @@ header .logo:hover {
 
   #menu h2 {
     margin: 0;
-  }
-
-  #menu .img-container {
-    background-image: url("fotos/palo.png");
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    width: 400px;
   }
 
   #inicio .proyectos {
@@ -1086,7 +1079,6 @@ header .logo:hover {
   }
 
   .main-wrap {
-    background-image: url("https://4.bp.blogspot.com/-HaIPQhTAQEI/YTnfAcaq4oI/AAAAAAAAO4E/malj9gv8HUYFw3OH8G3KYTkqLrtRcDXdwCLcBGAsYHQ/img-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1304,7 +1296,6 @@ header.scrolled.header-wrap .container .mainInner {
 }
 
 .main-wrap {
-  background-image: url("https://4.bp.blogspot.com/-HaIPQhTAQEI/YTnfAcaq4oI/AAAAAAAAO4E/malj9gv8HUYFw3OH8G3KYTkqLrtRcDXdwCLcBGAsYHQ/img-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1393,61 +1384,4 @@ header.scrolled.header-wrap .container .mainInner {
     opacity: 1;
     visibility: visible;
   }
-}
-
-.fa,
-.fas,
-.far,
-.fal,
-.fab {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.fab {
-  font-family: "Font Awesome 5 Brands";
-}
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
-    url("../webfonts/fa-regular-400.woff2") format("woff2"),
-    url("../webfonts/fa-regular-400.woff") format("woff"),
-    url("../webfonts/fa-regular-400.ttf") format("truetype"),
-    url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
-}
-
-.fa-facebook-f:before {
-  content: "\f39e";
-}
-
-.fa-whatsapp:before {
-  content: "\f232";
-}
-
-.fa-twitter:before {
-  content: "\f099";
-}
-
-.fa-pinterest-p:before {
-  content: "\f231";
-}
-
-.fa-share-alt:before {
-  content: "\f1e0";
-}
-
-.fa,
-.fas {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
 }

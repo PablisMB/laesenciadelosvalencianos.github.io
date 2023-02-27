@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-display: swap;
 }
 
 html,
@@ -369,17 +370,17 @@ header .logo:hover {
 }
 
 .footer-distributed .footer-icons #fb {
-  background-image: url("./fotos/facebuk.png");
+  background-image: url("./fotos/facebuk.webp");
   background-size: 50px 50px;
 }
 
 .footer-distributed .footer-icons #ig {
-  background-image: url("./fotos/instagram3.png");
+  background-image: url("./fotos/instagram3.webp");
   background-size: 50px 50px;
 }
 
 .footer-distributed .footer-icons #maps {
-  background-image: url("./fotos/periscope.png");
+  background-image: url("./fotos/periscope.webp");
   background-size: 50px 50px;
 }
 
@@ -747,6 +748,7 @@ header .logo:hover {
 #cookiePopup img {
   display: block;
   width: 10em;
+  height: 100%;
   transform: translateZ(0);
   position: relative;
   margin: auto;
@@ -901,7 +903,6 @@ header .logo:hover {
 }
 
 .main-wrap {
-  background-image: url("https://4.bp.blogspot.com/-HaIPQhTAQEI/YTnfAcaq4oI/AAAAAAAAO4E/malj9gv8HUYFw3OH8G3KYTkqLrtRcDXdwCLcBGAsYHQ/img-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1154,7 +1155,6 @@ header .logo:hover {
   }
 
   .main-wrap {
-    background-image: url("https://4.bp.blogspot.com/-HaIPQhTAQEI/YTnfAcaq4oI/AAAAAAAAO4E/malj9gv8HUYFw3OH8G3KYTkqLrtRcDXdwCLcBGAsYHQ/img-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1255,7 +1255,6 @@ header .logo:hover {
 }
 
 .main-wrap {
-  background-image: url("https://4.bp.blogspot.com/-HaIPQhTAQEI/YTnfAcaq4oI/AAAAAAAAO4E/malj9gv8HUYFw3OH8G3KYTkqLrtRcDXdwCLcBGAsYHQ/img-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
