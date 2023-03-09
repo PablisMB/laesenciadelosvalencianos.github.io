@@ -1285,10 +1285,6 @@ header.scrolled.header-wrap .container .mainInner {
   align-items: center;
 }
 
-.navbar-menu ul li:not(:last-child) {
-  margin-right: 30px;
-}
-
 .navbar-close,
 .navbar-icon,
 .navbar-icon > * {
