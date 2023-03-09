@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
+@font-face {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
   font-display: swap;
@@ -311,19 +318,18 @@ header .logo:hover {
 }
 
 #menu p {
-  text-align: justify;
-  align-items: center;
-  font-size: 1.5em;
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
   color: rgb(231, 213, 213);
-  display: table-cell;
 }
 
 .carta p {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 100%;
+  word-wrap: break-word;
   margin: 0;
-  display: table;
 }
 
 .carta p a {
@@ -968,14 +974,6 @@ header .logo:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  #menu p {
-    text-align: justify;
-    align-items: center;
-    font-size: 1.2em;
-    color: rgb(231, 213, 213);
-    display: table-cell;
   }
 
   .footer-distributed a {

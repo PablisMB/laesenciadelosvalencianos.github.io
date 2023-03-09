@@ -370,14 +370,19 @@
             <a
               id="fb"
               href="https://es-es.facebook.com/LaEsenciaDeLosValencianos"
+              aria-label="Facebook"
               ><i class="fa-facebook"></i
             ></a>
-            <a id="ig" href="https://www.instagram.com/laesenciadelos/?hl=es"
+            <a
+              id="ig"
+              href="https://www.instagram.com/laesenciadelos/?hl=es"
+              aria-label="Instagram"
               ><i class="fa-instagram"></i
             ></a>
             <a
               id="maps"
               href="https://www.google.com/maps/place/La+Esencia+de+los+Valencianos/@38.9181301,-6.3438216,20.08z/data=!4m5!3m4!1s0xd1427b01bb3d7a5:0x894229faa19dfdd9!8m2!3d38.9181438!4d-6.3435196"
+              aria-label="Google Maps"
               ><i class="fa-maps"></i
             ></a>
           </div>
@@ -400,71 +405,6 @@
         var body = document.body;
         body.classList.toggle("dark-theme");
       }
-
-      let theme = "light";
-      let clicks = 0;
-
-      const switchTheme = () => {
-        const root = document.documentElement;
-        if (theme === "light") {
-          root.style.setProperty("--bg-color", "#111111");
-          root.style.setProperty("--text-color", "#FFFFFF");
-          theme = "dark";
-        } else {
-          root.style.setProperty("--bg-color", "#FFFFFF");
-          root.style.setProperty("--text-color", "#111111");
-          theme = "light";
-        }
-      };
-
-      const switcht = document.querySelector("#enc-a");
-      switcht.addEventListener("click", () => {
-        clicks++;
-        localStorage.setItem("clicks", clicks);
-        switchTheme();
-      });
-
-      if (localStorage.getItem("clicks")) {
-        clicks = parseInt(localStorage.getItem("clicks"));
-      }
-
-      if (clicks % 2 !== 0) {
-        switchTheme();
-      }
-      /*
-
-        let theme = "light";
-        let clicks = 0;
-
-        const switchTheme = () => {
-          const root = document.documentElement;
-          if (theme === "light") {
-            root.style.setProperty("--bg-color", "#111111");
-            root.style.setProperty("--text-color", "#FFFFFF");
-            theme = "dark";
-          } else {
-            root.style.setProperty("--bg-color", "#FFFFFF");
-            root.style.setProperty("--text-color", "#111111");
-            theme = "light";
-          }
-        };
-
-        const switcht = document.querySelector(".switcht");
-        switcht.addEventListener("click", () => {
-          clicks++;
-          localStorage.setItem("clicks", clicks);
-          switchTheme();
-        });
-
-        if (localStorage.getItem("clicks")) {
-          clicks = parseInt(localStorage.getItem("clicks"));
-        }
-
-        if (clicks % 2 !== 0) {
-          switchTheme();
-        }
-
-        */
     </script>
   </body>
 </html>
