@@ -243,9 +243,10 @@ header .logo:hover {
   padding-top: 30px;
 }
 
-#inicio h4 {
+#inicio span {
   color: rgba(255, 255, 255, 0.671);
   padding-top: 30px;
+  font-weight: bold;
 }
 
 #inicio button {
